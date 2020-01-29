@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lotus  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="Lotus  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">Lotus Docs</a> (41% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">Lotus Reference</a>
+        <img id="carat" src="img/carat.png" />
+        Lotus  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/AnimationMaker.html">AnimationMaker</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/AnimationMakerAnimatable.html">AnimationMakerAnimatable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/AnimationMakerEditable.html">AnimationMakerEditable</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/EasingType.html">EasingType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/MotionType.html">MotionType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/ScaleType.html">ScaleType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Extensions/CALayer.html">CALayer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/UIView.html">UIView</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/AnimatableItem.html">AnimatableItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols.html#/s:5Lotus14AnimationValueP">AnimationValue</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Structs/AnimationLayerChainDSL.html">AnimationLayerChainDSL</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/AnimationLayerDSL.html">AnimationLayerDSL</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <h1 id='lotus' class='heading'>Lotus</h1>
+
+<p><img src="https://img.shields.io/badge/swift-5-orange.svg" alt="Language">
+<a href="https://travis-ci.org/vkondrashkov/lotus"><img src="https://travis-ci.org/vkondrashkov/lotus.svg?branch=develop" alt="Build Status"></a>
+<a href="https://codecov.io/gh/vkondrashkov/lotus"><img src="https://codecov.io/gh/vkondrashkov/lotus/branch/develop/graph/badge.svg" alt="codecov"></a>
+<a href="http://cocoapods.org/pods/Lotus"><img src="https://img.shields.io/cocoapods/v/Lotus.svg?style=flat" alt="Version"></a>
+<a href="https://github.com/vkondrashkov/lotus/blob/develop/LICENSE"><img src="https://img.shields.io/cocoapods/l/Lotus.svg?style=flat" alt="License"></a>
+<a href="http://cocoapods.org/pods/Lotus"><img src="https://img.shields.io/cocoapods/p/Lotus.svg?style=flat" alt="Platform"></a></p>
+
+<p><strong>Lotus</strong> – powerful nano framework that helps implement layer animation with easy syntax. This DSL relieves you from routine code of making animations via CoreAnimation.</p>
+
+<p><img src="Example/Assets/lotus.gif" alt="Lotus" width="200"/></p>
+<pre class="highlight swift"><code><span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="mi">0</span><span class="o">..&lt;</span><span class="mi">10</span> <span class="p">{</span>
+    <span class="k">let</span> <span class="nv">petalLayer</span> <span class="o">=</span> <span class="kt">PetalLayer</span><span class="p">()</span>
+    <span class="n">petalLayer</span><span class="o">.</span><span class="n">position</span> <span class="o">=</span> <span class="kt">CGPoint</span><span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="n">view</span><span class="o">.</span><span class="n">frame</span><span class="o">.</span><span class="n">width</span> <span class="o">/</span> <span class="mi">2</span><span class="p">,</span> <span class="nv">y</span><span class="p">:</span> <span class="n">view</span><span class="o">.</span><span class="n">frame</span><span class="o">.</span><span class="n">height</span> <span class="o">/</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">60</span><span class="p">)</span>
+
+    <span class="k">let</span> <span class="nv">direction</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">?</span> <span class="o">-</span><span class="mf">1.0</span> <span class="p">:</span> <span class="mf">1.0</span>
+    <span class="k">let</span> <span class="nv">initialRotationDegree</span> <span class="o">=</span> <span class="mf">3.0</span> <span class="o">*</span> <span class="kt">CGFloat</span><span class="p">(</span><span class="n">i</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span> <span class="o">*</span> <span class="o">.</span><span class="n">pi</span> <span class="o">/</span> <span class="mf">180.0</span>
+    <span class="k">let</span> <span class="nv">rotateTransform</span> <span class="o">=</span> <span class="kt">CGAffineTransform</span><span class="o">.</span><span class="n">identity</span><span class="o">.</span><span class="nf">rotated</span><span class="p">(</span><span class="nv">by</span><span class="p">:</span> <span class="n">direction</span> <span class="o">*</span> <span class="n">initialRotationDegree</span><span class="p">)</span>
+    <span class="n">petalLayer</span><span class="o">.</span><span class="nf">setAffineTransform</span><span class="p">(</span><span class="n">rotateTransform</span><span class="p">)</span>
+    <span class="n">view</span><span class="o">.</span><span class="n">layer</span><span class="o">.</span><span class="nf">addSublayer</span><span class="p">(</span><span class="n">petalLayer</span><span class="p">)</span>
+
+    <span class="k">let</span> <span class="nv">rotationDegree</span> <span class="o">=</span> <span class="mf">12.0</span> <span class="o">*</span> <span class="kt">CGFloat</span><span class="p">(</span><span class="n">i</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span> <span class="o">*</span> <span class="o">.</span><span class="n">pi</span> <span class="o">/</span> <span class="mf">180.0</span>
+    <span class="n">petalLayer</span><span class="o">.</span><span class="n">lotus</span><span class="o">.</span><span class="n">runAnimation</span> <span class="p">{</span> <span class="n">make</span> <span class="k">in</span>
+        <span class="n">make</span><span class="o">.</span><span class="n">opacity</span><span class="o">.</span><span class="nf">to</span><span class="p">(</span><span class="mf">0.7</span><span class="p">)</span><span class="o">.</span><span class="nf">during</span><span class="p">(</span><span class="mf">0.7</span><span class="p">)</span><span class="o">.</span><span class="nf">delay</span><span class="p">(</span><span class="mf">1.0</span><span class="p">)</span>
+    <span class="p">}</span><span class="o">.</span><span class="n">then</span> <span class="p">{</span> <span class="n">make</span> <span class="k">in</span>
+        <span class="n">make</span><span class="o">.</span><span class="n">rotation</span><span class="o">.</span><span class="nf">to</span><span class="p">(</span><span class="n">direction</span> <span class="o">*</span> <span class="n">rotationDegree</span><span class="p">)</span><span class="o">.</span><span class="nf">during</span><span class="p">(</span><span class="mf">0.6</span><span class="p">)</span>
+    <span class="p">}</span><span class="o">.</span><span class="n">then</span> <span class="p">{</span> <span class="n">make</span> <span class="k">in</span>
+        <span class="n">make</span><span class="o">.</span><span class="n">scaling</span><span class="o">.</span><span class="nf">to</span><span class="p">(</span><span class="mf">1.2</span><span class="p">)</span><span class="o">.</span><span class="nf">delay</span><span class="p">(</span><span class="mf">0.3</span><span class="p">)</span><span class="o">.</span><span class="nf">during</span><span class="p">(</span><span class="mf">1.5</span><span class="p">)</span><span class="o">.</span><span class="nf">ease</span><span class="p">(</span><span class="o">.</span><span class="n">outElastic</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+<h2 id='contents' class='heading'>Contents</h2>
+
+<ul>
+<li><a href="#getting_started">Getting started</a>
+
+<ul>
+<li><a href="#requirements">Requirements</a></li>
+<li><a href="#installing">Installing</a></li>
+<li><a href="#usage">Usage</a></li>
+</ul></li>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#tests">Tests</a></li>
+<li><a href="#contributing">Contributing</a></li>
+<li><a href="#authors">Authors</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<h2 id='getting-started' class='heading'>Getting started</h2>
+
+<p>These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.</p>
+<h3 id='requirements' class='heading'>Requirements</h3>
+
+<ul>
+<li>Xcode 10.2+</li>
+<li>Cocoapods 1.7.0+</li>
+<li>Git client</li>
+</ul>
+<h3 id='installing' class='heading'>Installing</h3>
+<h4 id='cocoapods' class='heading'>CocoaPods</h4>
+
+<p>1. In terminal switch to your repository with project<br>
+2. Specify Lotus in your <code>Podfile</code>:</p>
+<pre class="highlight ruby"><code><span class="n">source</span> <span class="s1">'https://github.com/CocoaPods/Specs.git'</span>
+<span class="n">platform</span> <span class="ss">:ios</span><span class="p">,</span> <span class="s1">'9.0'</span>
+<span class="n">use_frameworks!</span>
+
+<span class="n">target</span> <span class="s1">'&lt;Your Target Name&gt;'</span> <span class="k">do</span>
+    <span class="n">pod</span> <span class="s1">'Lotus'</span>
+<span class="k">end</span>
+</code></pre>
+
+<p>3. Run <code>pod install</code> command</p>
+<h3 id='usage' class='heading'>Usage</h3>
+
+<p>1. Import Lotus into your project</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">Lotus</span>
+</code></pre>
+
+<p>2. Create any layer and add to <code>view</code>&lsquo;s hierarchy</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">redSquareLayer</span> <span class="o">=</span> <span class="kt">CALayer</span><span class="p">()</span>
+<span class="n">redSquareLayer</span><span class="o">.</span><span class="n">frame</span> <span class="o">=</span> <span class="kt">CGRect</span><span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="mf">50.0</span><span class="p">,</span> <span class="nv">y</span><span class="p">:</span> <span class="mf">50.0</span><span class="p">,</span> <span class="nv">width</span><span class="p">:</span> <span class="mf">100.0</span><span class="p">,</span> <span class="nv">height</span><span class="p">:</span> <span class="mf">100.0</span><span class="p">)</span>
+<span class="n">view</span><span class="o">.</span><span class="n">layer</span><span class="o">.</span><span class="nf">addSublayer</span><span class="p">(</span><span class="n">redSquareLayer</span><span class="p">)</span>
+</code></pre>
+
+<p>3. Then run any needed animation whenever you need</p>
+<pre class="highlight swift"><code><span class="n">redSquareLayer</span><span class="o">.</span><span class="n">lotus</span><span class="o">.</span><span class="n">runAnimation</span> <span class="p">{</span> <span class="n">make</span> <span class="k">in</span>
+    <span class="n">make</span><span class="o">.</span><span class="n">rotation</span><span class="o">.</span><span class="nf">to</span><span class="p">(</span><span class="mf">360.0</span> <span class="o">*</span> <span class="o">.</span><span class="n">pi</span> <span class="o">/</span> <span class="mf">180.0</span><span class="p">)</span><span class="o">.</span><span class="nf">during</span><span class="p">(</span><span class="mf">2.0</span><span class="p">)</span>
+<span class="p">}</span><span class="o">.</span><span class="n">then</span> <span class="p">{</span> <span class="n">make</span> <span class="k">in</span>
+    <span class="n">make</span><span class="o">.</span><span class="n">scaling</span><span class="o">.</span><span class="nf">to</span><span class="p">(</span><span class="mf">2.2</span><span class="p">)</span>
+<span class="p">}</span><span class="o">.</span><span class="n">then</span> <span class="p">{</span> <span class="n">make</span> <span class="k">in</span>
+    <span class="n">make</span><span class="o">.</span><span class="n">scaling</span><span class="o">.</span><span class="nf">to</span><span class="p">(</span><span class="mf">1.8</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre>
+<h2 id='documentation' class='heading'>Documentation</h2>
+
+<p>Find out all accessible facilities in <a href="https://github.com/vkondrashkov/lotus/wiki/Documentation">Documentation</a></p>
+<h2 id='tests' class='heading'>Tests</h2>
+
+<p>Oops, they have gone somewhere, let&rsquo;s wait for them!</p>
+<h2 id='contributing' class='heading'>Contributing</h2>
+
+<p>Coming soon!</p>
+<h2 id='authors' class='heading'>Authors</h2>
+
+<ul>
+<li><strong>Vladislav Kondrashkov</strong> - <em>Initial work</em> - <a href="https://github.com/vkondrashkov" title="Vladislav Kondrashkov">vkondrashkov</a></li>
+<li><strong>Pavel Kondrashkov</strong> - <em>Mentor, idea contributor</em> - <a href="https://github.com/pkondrashkov" title="Pavel Kondrashkov">pkondrashkov</a></li>
+</ul>
+
+<p>See also the list of <a href="https://github.com/vkondrashkov/lotus/graphs/contributors" title="Contributors">contributors</a> who participated in this project.</p>
+<h2 id='license' class='heading'>License</h2>
+
+<p>This project is licensed under the MIT License - see the <a href="https://github.com/vkondrashkov/ListenTo-iOS/blob/develop/LICENSE" title="MIT License">LICENSE.md</a> file for details</p>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="https://github.com/vkondrashkov/lotus" target="_blank" rel="external">Vladislav Kondrashkov</a>. All rights reserved. (Last updated: 2020-01-29)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.11.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

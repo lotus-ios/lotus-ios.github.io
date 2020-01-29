@@ -1,0 +1,292 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/vkondrashkov/XcodeProjects/Lotus/Source/AnimatableItem.swift",
+      "line": 15,
+      "symbol": "AnimatableItem.position",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vkondrashkov/XcodeProjects/Lotus/Source/AnimatableItem.swift",
+      "line": 16,
+      "symbol": "AnimatableItem.scale",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vkondrashkov/XcodeProjects/Lotus/Source/AnimatableItem.swift",
+      "line": 17,
+      "symbol": "AnimatableItem.scaleX",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vkondrashkov/XcodeProjects/Lotus/Source/AnimatableItem.swift",
+      "line": 18,
+      "symbol": "AnimatableItem.scaleY",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vkondrashkov/XcodeProjects/Lotus/Source/AnimatableItem.swift",
+      "line": 19,
+      "symbol": "AnimatableItem.alpha",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vkondrashkov/XcodeProjects/Lotus/Source/AnimatableItem.swift",
+      "line": 20,
+      "symbol": "AnimatableItem.rotation",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vkondrashkov/XcodeProjects/Lotus/Source/AnimatableItem.swift",
+      "line": 24,
+      "symbol": "CALayer.scale",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vkondrashkov/XcodeProjects/Lotus/Source/AnimatableItem.swift",
+      "line": 28,
+      "symbol": "CALayer.scaleX",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vkondrashkov/XcodeProjects/Lotus/Source/AnimatableItem.swift",
+      "line": 33,
+      "symbol": "CALayer.scaleY",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vkondrashkov/XcodeProjects/Lotus/Source/AnimatableItem.swift",
+      "line": 38,
+      "symbol": "CALayer.alpha",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vkondrashkov/XcodeProjects/Lotus/Source/AnimatableItem.swift",
+      "line": 42,
+      "symbol": "CALayer.rotation",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vkondrashkov/XcodeProjects/Lotus/Source/AnimationValue.swift",
+      "line": 11,
+      "symbol": "AnimationValue",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vkondrashkov/XcodeProjects/Lotus/Source/EasingType.swift",
+      "line": 19,
+      "symbol": "EasingType.custom(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vkondrashkov/XcodeProjects/Lotus/Source/EasingType.swift",
+      "line": 23,
+      "symbol": "EasingType.linear",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vkondrashkov/XcodeProjects/Lotus/Source/EasingType.swift",
+      "line": 24,
+      "symbol": "EasingType.defaultIn",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vkondrashkov/XcodeProjects/Lotus/Source/EasingType.swift",
+      "line": 25,
+      "symbol": "EasingType.defaultOut",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vkondrashkov/XcodeProjects/Lotus/Source/EasingType.swift",
+      "line": 26,
+      "symbol": "EasingType.defaultInOut",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vkondrashkov/XcodeProjects/Lotus/Source/EasingType.swift",
+      "line": 30,
+      "symbol": "EasingType.inSine",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vkondrashkov/XcodeProjects/Lotus/Source/EasingType.swift",
+      "line": 31,
+      "symbol": "EasingType.outSine",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vkondrashkov/XcodeProjects/Lotus/Source/EasingType.swift",
+      "line": 32,
+      "symbol": "EasingType.inOutSine",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vkondrashkov/XcodeProjects/Lotus/Source/EasingType.swift",
+      "line": 36,
+      "symbol": "EasingType.inQuad",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vkondrashkov/XcodeProjects/Lotus/Source/EasingType.swift",
+      "line": 37,
+      "symbol": "EasingType.outQuad",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vkondrashkov/XcodeProjects/Lotus/Source/EasingType.swift",
+      "line": 38,
+      "symbol": "EasingType.inOutQuad",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vkondrashkov/XcodeProjects/Lotus/Source/EasingType.swift",
+      "line": 42,
+      "symbol": "EasingType.inCubic",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vkondrashkov/XcodeProjects/Lotus/Source/EasingType.swift",
+      "line": 43,
+      "symbol": "EasingType.outCubic",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vkondrashkov/XcodeProjects/Lotus/Source/EasingType.swift",
+      "line": 44,
+      "symbol": "EasingType.inOutCubic",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vkondrashkov/XcodeProjects/Lotus/Source/EasingType.swift",
+      "line": 48,
+      "symbol": "EasingType.inQuart",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vkondrashkov/XcodeProjects/Lotus/Source/EasingType.swift",
+      "line": 49,
+      "symbol": "EasingType.outQuart",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vkondrashkov/XcodeProjects/Lotus/Source/EasingType.swift",
+      "line": 50,
+      "symbol": "EasingType.inOutQuart",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vkondrashkov/XcodeProjects/Lotus/Source/EasingType.swift",
+      "line": 54,
+      "symbol": "EasingType.inQuint",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vkondrashkov/XcodeProjects/Lotus/Source/EasingType.swift",
+      "line": 55,
+      "symbol": "EasingType.outQuint",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vkondrashkov/XcodeProjects/Lotus/Source/EasingType.swift",
+      "line": 56,
+      "symbol": "EasingType.inOutQuint",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vkondrashkov/XcodeProjects/Lotus/Source/EasingType.swift",
+      "line": 60,
+      "symbol": "EasingType.inExpo",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vkondrashkov/XcodeProjects/Lotus/Source/EasingType.swift",
+      "line": 61,
+      "symbol": "EasingType.outExpo",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vkondrashkov/XcodeProjects/Lotus/Source/EasingType.swift",
+      "line": 62,
+      "symbol": "EasingType.inOutExpo",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vkondrashkov/XcodeProjects/Lotus/Source/EasingType.swift",
+      "line": 66,
+      "symbol": "EasingType.inCirc",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vkondrashkov/XcodeProjects/Lotus/Source/EasingType.swift",
+      "line": 67,
+      "symbol": "EasingType.outCirc",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vkondrashkov/XcodeProjects/Lotus/Source/EasingType.swift",
+      "line": 68,
+      "symbol": "EasingType.inOutCirc",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vkondrashkov/XcodeProjects/Lotus/Source/EasingType.swift",
+      "line": 72,
+      "symbol": "EasingType.inBack",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vkondrashkov/XcodeProjects/Lotus/Source/EasingType.swift",
+      "line": 73,
+      "symbol": "EasingType.outBack",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vkondrashkov/XcodeProjects/Lotus/Source/EasingType.swift",
+      "line": 74,
+      "symbol": "EasingType.inOutBack",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/vkondrashkov/XcodeProjects/Lotus"
+}
